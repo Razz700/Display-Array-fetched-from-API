@@ -79,7 +79,7 @@ data.products.forEach((item)=>{
     <tr>
     <td></td><td><img src='${item.images}'></td><td></td>
     </tr>
-    <tr style='font-size: xx-large;'>
+    <tr style='font-size: x-large;'>
     <td></td><td>Price:<b>$${item.price}</b> Discount:<b>${item.discountPercentage}% off</b> MRP:<em>${(item.price*(1+item.discountPercentage/100)).toFixed(2)}</em></td><td>Rating:<b>${item.rating}</b></td>
     </tr>
     <tr>
