@@ -43,7 +43,7 @@ setTimeout(()=>{
    data.posts.forEach((item) => {
     document.querySelector('body>main>#t1>tbody').innerHTML+=`
     <tr>
-    <td>${item.id}</td><td>Title:<b>${item.title}</b></td><td>UserId:<b>${item.userId}</b></td>
+    <td>${item.id}</td><td style='font-size:large;'>Title:<b>${item.title}</b></td><td>UserId:<b>${item.userId}</b></td>
     </tr>
     <tr>
     <td></td><td>${item.body}</td>
@@ -74,12 +74,12 @@ fetch('https://dummyjson.com/products').then((res)=>{
 data.products.forEach((item)=>{
     document.querySelector('body>main>#t2>tbody').innerHTML+=`
     <tr>
-    <td>${item.id}</td><td><b>${item.title}</b></td><td></td>
+    <td>${item.id}</td><td style='font-size:x-large;'><b>${item.title}</b></td><td></td>
     </tr>
     <tr>
     <td></td><td><img src='${item.images}'></td><td></td>
     </tr>
-    <tr>
+    <tr style='font-size: xx-large;'>
     <td></td><td>Price:<b>$${item.price}</b> Discount:<b>${item.discountPercentage}% off</b> MRP:<em>${(item.price*(1+item.discountPercentage/100)).toFixed(2)}</em></td><td>Rating:<b>${item.rating}</b></td>
     </tr>
     <tr>
@@ -126,7 +126,7 @@ fetch(' https://dummyjson.com/todos').then((res)=>{
     data.todos.forEach((item) => {
         document.querySelector('body>main>#t3>tbody').innerHTML+=`
         <tr>
-        <td>${item.id}</td><td>Todo:<b>${item.todo}</b></td><td>UserId:<b>${item.userId}</b></td>
+        <td>${item.id}</td><td style='font-size:large;'>Todo:<b>${item.todo}</b></td><td>UserId:<b>${item.userId}</b></td>
         </tr>
         <tr>
         <td></td><td>Completed:<b>${item.completed}</b></td>
